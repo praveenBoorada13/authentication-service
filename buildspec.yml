@@ -5,10 +5,9 @@ phases:
   commands:
     - echo Entered the build phase...
     - mvn clean package
- postbuild:
+ post_build:
   commands:
     - echo Build completed successfully
 artifacts:
  files:
-  - target/authentication.jar
- dicard-paths: yes
+ - '**/*'
